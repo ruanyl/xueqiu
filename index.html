@@ -1,0 +1,494 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"><meta property="qc:admins" content="10210420621156375"><meta name="renderer" content="webkit"><title>雪球</title><script>var _write = document.write;
+var write = function (str) {
+  SNB = window.SNB || {};
+  if (_write.apply) {
+    SNB.docWrite = function (str) {
+      _write.apply(document, arguments);
+    }
+  } else {
+    SNB.docWrite = _write;
+  }
+};
+
+document.write = write;
+</script><meta name="keywords" content="雪球"><meta name="description" content="雪球是一个投资者的社交网络，给投资者提供跨市场、跨品种的数据查询、新闻订阅和互动交流服务，目前已覆盖A股、港股、美股市场。"><!--<link rel="shortcut icon" href="http://xueqiu.com/favicon.ico">--><link rel="icon" type="image/png" href="http://assets.imedao.com/images/favicon.png"><style>html {display:none}</style><script>if (self == top) {
+  document.documentElement.style.display = 'block';
+} else if (top.location.host !== 'xueqiu.com') {
+  top.location = self.location;
+}
+var WATCH = {};
+WATCH.appStart = 1426685198027
+WATCH.pageStart = (new Date()).getTime()</script><link rel="stylesheet" href="http://assets.imedao.com/style/bootstrap-84b5ee.css"><style>body{
+  padding-top:40px;
+}
+/* TODO */
+.search .dropdown-menu strong{
+  height:12px;
+  line-height:12px;
+}</style><link rel="apple-touch-icon-precomposed" href="http://assets.imedao.com/images/icon-144.png"><script src="http://assets.imedao.com/js/xdomain-0.6.15.js"></script><script>xdomain.slaves({
+  'https://xueqiu.com': '/proxy2.html',
+  'https://im0.xueqiu.com': '/proxy2.html',
+  'https://im1.xueqiu.com': '/proxy2.html',
+  'https://im2.xueqiu.com': '/proxy2.html',
+  'https://im3.xueqiu.com': '/proxy2.html',
+  'https://im4.xueqiu.com': '/proxy2.html',
+  'https://im5.xueqiu.com': '/proxy2.html',
+  'https://im6.xueqiu.com': '/proxy2.html',
+  'https://im7.xueqiu.com': '/proxy2.html',
+  'https://im8.xueqiu.com': '/proxy2.html',
+  'https://im9.xueqiu.com': '/proxy2.html'
+});</script><script src="http://assets.imedao.com/js/SNB.lib.bundle-b11b47.js"></script></head><body id="errorLogin" class="right  isPC isNotMobile isNotPad"><script>SNB = window.SNB || {};
+jQuery.extend(SNB, {
+  data: {},
+  env: "production",
+  Views: {},
+  Templates: {},
+  Models: {},
+  Collections: {},
+  domain: {"host":"http://xueqiu.com","base":"http://api.xueqiu.com","photo":"http://photo.xueqiu.com","stock":"http://api.xueqiu.com","static":"http://assets.imedao.com","staticHttps":"https://js.xueqiu.com","upyun":"http://xqimg.b0.upaiyun.com","pdf":"http://doc.xueqiu.com","im":"http://api.xueqiu.com","shared":"/data/source/snowball-fe/shared/","file":"http://xqfile.imedao.com/"},
+  currentUser: {"isGuest":true},
+  jsVersion: {"05.jquery.cookie.js":"68e2a4","08.templates.js":"4aa7bf","SNB.TopicList.js":"870445","SNB.UsersList.js":"34f02b","SNB.atDialog.js":"b5dce3","SNB.base.js":"0e6b16","SNB.base_simple.js":"8d5f63","SNB.bind_verify.js":"118df1","SNB.calendar.js":"c65d9a","SNB.calendarDialog.js":"929cb0","SNB.calendarSubscribe.js":"e6012c","SNB.capitalReturnRateChart.js":"bd11c3","SNB.cardDialog.js":"ab3d1d","SNB.commentView.js":"bbb8d8","SNB.commonFriends.js":"230e08","SNB.companyInfo.js":"86e7f2","SNB.dialog.js":"1ba7c4","SNB.dm.js":"4c9d34","SNB.dmDialog.js":"c96117","SNB.downloadDialog.js":"68595d","SNB.editor.emotion.js":"ccd772","SNB.editor.js":"adb8a9","SNB.eventShare.js":"7b230c","SNB.financeTableDataInfo.js":"63138a","SNB.follower.js":"83577e","SNB.friends.js":"d90729","SNB.g.bar.js":"8d17c0","SNB.guest.js":"a94f90","SNB.guide.js":"28902b","SNB.helpers.js":"d5327e","SNB.his_home.js":"468d25","SNB.holdStockChart.js":"7fb688","SNB.home.js":"da999e","SNB.hotStock.js":"320cd1","SNB.im.contacts.js":"3d5779","SNB.im.dialog.js":"ee29f9","SNB.im.emotions.js":"158b2d","SNB.im.group_applys.js":"5c11f0","SNB.im.group_joined.js":"3f1895","SNB.im.js":"43351a","SNB.im.message.js":"1c9f8a","SNB.im.model.js":"a8324f","SNB.im.net.js":"ec4486","SNB.im.peer_chat.js":"cb13f1","SNB.im.session_item.js":"bbffaa","SNB.im.sessions_list.js":"eb2ad1","SNB.im.setting.js":"ac0ed0","SNB.im.stranger.js":"8ea9a5","SNB.im.utils.js":"6a455e","SNB.imeigu_fund_topic.js":"712871","SNB.imeigu_index.js":"d4f2e9","SNB.index.login.js":"bba5e1","SNB.inner_trade.js":"7d8321","SNB.interest.js":"eeb1f8","SNB.interview.js":"fa9ef6","SNB.kline.js":"b097fb","SNB.lib.bundle.js":"b11b47","SNB.lib.mobile.js":"8eda9f","SNB.modify_email.js":"0cb2c6","SNB.newChart.js":"453bf1","SNB.newChart.mobile.js":"089c9a","SNB.newProfile.js":"50704d","SNB.password.js":"8bf5ac","SNB.pdfDialog.js":"edc173","SNB.performance-year.js":"55e5b8","SNB.performance.js":"b83bda","SNB.performanceChart.js":"0cc6bc","SNB.performanceView.js":"fde3d9","SNB.performance_mobile.js":"2890ea","SNB.personality.js":"3a3a3d","SNB.portfolio.js":"b332e5","SNB.portfolioNew.js":"291c15","SNB.portfolioShareDialog.js":"b581bf","SNB.profile_info.js":"621d95","SNB.recommend.js":"0444f1","SNB.renderTableTrHtml.js":"d9ecf0","SNB.renderUserView.js":"0ea1a6","SNB.reportSpam.js":"418c1f","SNB.repostDialog.js":"7df4cb","SNB.sameFriend.js":"b18a13","SNB.search.js":"11b42e","SNB.search_ipad.js":"62a216","SNB.search_stock_ipad.js":"6910d7","SNB.setting_user.js":"5d7e30","SNB.shareDialog.js":"1dee89","SNB.similarUsers.js":"72068a","SNB.singleStock.js":"2f733b","SNB.status-edit.js":"a9ae8a","SNB.status.js":"1172f0","SNB.status_mobile.js":"7e19fa","SNB.stockActiveUser.js":"396eeb","SNB.stockFollowers.js":"e124c9","SNB.stockList.js":"941ade","SNB.stockList_new.js":"e5b606","SNB.stockNews.js":"311d94","SNB.stockRecommend.js":"352bad","SNB.stockScreener.js":"352de4","SNB.stockStatus.js":"7af8bd","SNB.talks.js":"e19cae","SNB.third_oauth.js":"1b9e2a","SNB.tipsTalk.js":"83e04f","SNB.tipsTopic.js":"624f0b","SNB.today.js":"ff42db","SNB.today.lib.js":"19681e","SNB.today_topic.js":"9f7844","SNB.tooltip.js":"b57764","SNB.topInfluence.js":"89f31e","SNB.trans.js":"ae4d82","SNB.tweetDialog.js":"9eb539","SNB.typeahead.js":"6c0b76","SNB.userRecommend.js":"5dcade","SNB.userRemark.js":"001ff1","SNB.validator.js":"32794c","SNB.weiboUser.js":"81e080","TGJSBridge.js":"4aaeff","WdatePicker.js":"eb9586","ajaxfileupload.js":"59627b","backbone.0.9.10.js":"5d519b","backbone.js":"d013f1","bootstrap.js":"6bd6fa","calendar.js":"9795e3","checkLogin.js":"38a9a1","config.js":"801d0d","d3.v2.min.js":"1ef3b6","fittext.js":"45db6e","flexpaper.js":"56a735","flexpaper_handlers.js":"623c12","fullcalendar.js":"26781c","g.bar.js":"32785d","g.line-min.js":"2db247","g.pie.js":"46e2f1","g.raphael.js":"630b74","hammer.js":"ec2456","hc_exporting.js":"bb5d9e","hc_grid.js":"3b9851","highcharts.js":"122285","highlight.js":"21d2c6","iScroll.js":"834870","im2014.js":"0216be","im_group_apply.js":"930e3b","imeigu_portfolioIframe.js":"8e3134","imgPlugin.js":"1cb5de","imgUpload.js":"0986a1","infinity.min.js":"0c5941","jquery.color.js":"875798","jquery.galleriffic.js":"e6186f","jquery.hammer.js":"e02a44","jquery.history.js":"6f8651","jquery.imgareaselect.js":"a9d059","jquery.js":"d80a03","jquery.lazyload.min.js":"fb3951","jquery.mousewheel.js":"41ebd2","jquery.pjax.js":"7ccac8","jquery.plugin.pullToRefresh.js":"35465b","jquery.rotate.1-1.js":"60d180","jquery.simplePagination.js":"420bda","jquery.tagsinput.js":"0dce2d","jquery.ui.js":"9ee05e","jquery.uploadify.js":"aac61a","jquery.validate.js":"555531","jquery.vticker.js":"5104ed","jquery.watermark.js":"0cc691","login.js":"094d42","moment.js":"b01d4e","morris.min.js":"92098e","mustache.js":"fbf1b1","perfect-scrollbar-0.4.8.with-mousewheel.min.js":"1bd536","raphael.js":"ea1c64","responsive_slides.min.js":"ea733a","sea.js":"1264a2","share-to-xueqiu.js":"ae4237","single.js":"36ac66","slides.jquery.js":"cd66ff","step01.js":"ceaeeb","subscribe.js":"7d760a","underscore.js":"51b489","userSearch.js":"54d13d","xdomain-0.6.15.js":"575cd5","xdomain.js":"c4e376","zepto.js":"6cdcc6","My97DatePicker/WdatePicker.js":"eb9586","My97DatePicker/calendar.js":"9795e3","SNB.lib.bundle/00.sea.js":"24e81c","SNB.lib.bundle/01.JSON.js":"b459a8","SNB.lib.bundle/02.modernizr.js":"f634b5","SNB.lib.bundle/03.jquery.js":"53538f","SNB.lib.bundle/04.jquery.ui.js":"96c17c","SNB.lib.bundle/05.jquery.cookie.js":"68e2a4","SNB.lib.bundle/06.underscore.js":"d97ed3","SNB.lib.bundle/07.backbone.js":"8a9a44","SNB.lib.bundle/08.templates.js":"4aa7bf","SNB.lib.bundle/10.jade.runtime.js":"1fc7ae","SNB.lib.mobile/1.zepto.min.js":"acaeac","SNB.lib.mobile/2.underscore.js":"c2da07","SNB.lib.mobile/iscroll.js":"4a55be","bootstrap/bootstrap-alert.js":"a9f081","bootstrap/bootstrap-button.js":"ce03ae","bootstrap/bootstrap-carousel.js":"62b76a","bootstrap/bootstrap-collapse.js":"9be616","bootstrap/bootstrap-dropdown.js":"af96b6","bootstrap/bootstrap-modal.js":"cf302e","bootstrap/bootstrap-popover.js":"a4e6a7","bootstrap/bootstrap-scrollspy.js":"a88d39","bootstrap/bootstrap-tab.js":"8f2b45","bootstrap/bootstrap-tooltip.js":"682437","bootstrap/bootstrap-transition.js":"17fa23","bootstrap/bootstrap-typeahead.js":"97f107","common/SNB.helpers.js":"2bdc5e","common/backbone_1.1.2.js":"8531c9","common/css3-mediaqueries.js":"f83d37","common/fastclick.js":"753522","common/jquery-1.9.1.js":"b8b878","common/json.js":"b459a8","common/lib.js":"de2f7c","common/sea-2.3.0.js":"c823d9","common/sea.js":"24e81c","common/underscore_1.6.0.js":"3ffba8","common/util.js":"183faf","common/zepto-core-fx.1.1.3.js":"27e274","common/zepto-deferred.js":"977158","cube/cube_detail.js":"b26446","cube/cube_detail_m.js":"1ea5eb","cube/cube_discover.js":"b16cdd","cube/cube_discover_m.js":"b9ea8b","cube/cube_edit.js":"827c91","cube/cube_guide.js":"88a7d5","cube/cube_recommend.js":"eb4aa8","cube/post_grid.js":"730811","cube/profile_cubes.js":"4c09f8","cube/range_slider.js":"358302","cube/stock_edit_modal.js":"9ad913","highcharts/jquery-1.6.4.min.js":"526f75","im2014/base.adapter.deliver.js":"17ba5b","im2014/base.adapter.js":"e895d8","im2014/base.config.js":"710ff1","im2014/base.js":"58869d","im2014/base.localstorage.js":"57720d","im2014/base.net.js":"540257","im2014/base.utils.js":"8cb3f7","im2014/db.contacts.js":"536985","im2014/db.groups.js":"aebe8f","im2014/db.js":"b1164d","im2014/db.message.helper.js":"0fa7e8","im2014/db.messages.js":"cd2db6","im2014/db.sessions.js":"b428e2","im2014/im.js":"3675e3","im2014/session.dialog.js":"34f336","im2014/session.editor.js":"fc99c9","im2014/session.gmm.js":"44c0a0","im2014/session.item.js":"2f722e","im2014/session.joingroup.js":"34f898","im2014/session.list.js":"35a7ff","im2014/session.message.js":"30b56c","im2014/session.setting.js":"a5fdcb","im2014/widget.emotion.js":"e07cbb","im2014/widget.joingroup.js":"b2ee4c","im2014/widget.requestjoingroup.js":"319aaa","im2014/widget.search.js":"2d2eda","im2014/widget.uploader.js":"e1abec","im2014/widget.viewer.js":"93c152","imeigu/xueqiu_popup.js":"61979d","lang/en.js":"c6550c","lang/zh-cn.js":"a606a6","lang/zh-tw.js":"4e0fdb","lib/autoresize.js":"f853a5","lib/chai.js":"743e8a","lib/jquery.easing.1.3.js":"008f85","lib/jquery.fullPage.js":"f69025","lib/mocha.js":"8799cd","lib/store.js":"9c7667","lib/ueditor.js":"2e0f51","lib/upload.js":"8837c4","pages/home.js":"1112bf","pages/single.js":"0a3e7d","widget/TSNB.addfriend.js":"f04fd7","widget/TSNB.addpdf.js":"d185b8","widget/TSNB.addstock.js":"0c459a","widget/TSNB.at.js":"a5ebeb","widget/TSNB.bindverify.js":"f3ea69","widget/TSNB.home-editor.js":"123ca2","widget/TSNB.newuser-guide.js":"3bc710","widget/TSNB.people-autocomplete.js":"92ed61","widget/TSNB.performance.js":"27b5e6","widget/TSNB.sharestatus.js":"16e249","widget/TSNB.stockalert.js":"1cb0fd","widget/TSNB.stockgroup.js":"7baec6","widget/TSNB.typeahead.js":"6e6634","widget/aside.js":"9cd404","widget/backbone1.1.2.js":"181b4a","widget/bootstrap.js":"abac2a","widget/donate.js":"312591","widget/donate_tooltip.js":"435b5f","widget/editor.js":"25fcd3","widget/emotions.js":"623bc3","widget/favorite.js":"e356ee","widget/forward.js":"fb609b","widget/global_pin.js":"4c1878","widget/lodash.underscore.js":"1854ff","widget/profile_pin.js":"fb4311","widget/report_spam.js":"2e5e63","widget/repost_comment.js":"4bb3ae","widget/share.js":"6e71c0","widget/status.js":"d06d1e","widget/underscore1.6.0.js":"4d7fd6","widget/util.js":"50c1da","My97DatePicker/lang/en.js":"c6550c","My97DatePicker/lang/zh-cn.js":"a606a6","My97DatePicker/lang/zh-tw.js":"4e0fdb","bootstrap/tests/phantom.js":"e38dfa","bootstrap/tests/server.js":"21e92a","common/lib/jquery-1.9.1.js":"3dd6ee","common/lib/sea-2.3.0.js":"c823d9","common/lib/underscore_1.6.0.js":"834fa8","common/util/image.js":"73664d","common/util/jade.runtime.js":"aed6b5","common/util/jquery.extend.js":"cb4243","common/util/observer.js":"648151","common/util/password.js":"ef4528","common/util/upload.js":"8f1294","pages/about/app.js":"eecbff","pages/about/app_mobile.js":"7db607","pages/consultant/consultant-market.js":"b5e904","pages/event/TSNB.year-summary-mobile.js":"73f230","pages/event/TSNB.year-summary.js":"daff60","pages/event/cmc.js":"a7c273","pages/home/timeline.js":"1112bf","pages/invest/SNB.chart_base.js":"285f6f","pages/invest/SNB.fund_chart.js":"4a2cb1","pages/invest/SNB.mobile_chart.js":"bc032b","pages/invest/SNB.mobile_stock.js":"d942d7","pages/invest/SNB.profile_broker_rank.js":"85311d","pages/invest/SNB.rank.js":"677dd5","pages/invest/chart.js":"02e6ce","pages/pay/deposit-mobile.js":"799d95","pages/pay/deposit.js":"e37ac4","pages/pay/donate-mobile.js":"153feb","pages/pay/pin.js":"1804ea","pages/pay/subscribe-mobile.js":"c6187b","pages/pay/withdraw.js":"952521","pages/sns/index.js":"d6aea0","pages/sns/single.js":"120bdc","pages/today/mobile.index.js":"f72378","widget/aside/TSNB.ad.js":"55466e","widget/aside/TSNB.hot-stocks.js":"dec569","widget/aside/TSNB.interesting-people.js":"b01b82","widget/aside/TSNB.other-services.js":"70e391","widget/aside/TSNB.recommend-people.js":"7ddb30","widget/aside/TSNB.sysnotify.js":"e50d01","widget/aside/TSNB.today-talk.js":"8fa37c","widget/bootstrap/affix.js":"f014e8","widget/bootstrap/alert.js":"915f20","widget/bootstrap/bootstrap-datepicker.js":"daa8d6","widget/bootstrap/button.js":"3a8a2e","widget/bootstrap/carousel.js":"f763e0","widget/bootstrap/collapse.js":"c9ceab","widget/bootstrap/dropdown.js":"164604","widget/bootstrap/modal.js":"d390dd","widget/bootstrap/popover.js":"8c9993","widget/bootstrap/scrollspy.js":"37bd38","widget/bootstrap/tab.js":"5df6c4","widget/bootstrap/tooltip.js":"b973d7","widget/bootstrap/transition.js":"7af948","widget/bootstrap/typeahead.js":"1e1e67","widget/editor/at.js":"41b184","widget/editor/emotion.js":"bd52eb","widget/editor/umeditor.config.js":"ed3336","widget/editor/umeditor.js":"6b7121","widget/editor/zh-cn.js":"16b3e4","widget/flexpaper/flexpaper.js":"56a735","widget/flexpaper/flexpaper_handlers.js":"39b20d","widget/mobile/action.js":"43495d","widget/mobile/form.js":"03c77e","widget/mobile/modal.js":"309f6a","widget/mobile/overlay.js":"44e1eb","widget/status/comment.js":"239e91","widget/status/data.js":"d2678b","widget/status/pdf.js":"0af8cc","widget/status/pin.js":"4dce9c","widget/tmp/SNB.base.js":"73a62a","widget/tmp/json.js":"b459a8","widget/util/TSNB.donate.js":"dabf92","widget/util/areas.js":"4f6252","widget/util/modal.js":"0a947f","widget/util/notice.js":"c2c3a1","widget/util/share.js":"8c017a","widget/util/tooltip.js":"30a8e8","widget/util/typeahead.js":"f70471","widget/util/user.js":"27edc1","bootstrap/tests/unit/bootstrap-alert.js":"93d6ac","bootstrap/tests/unit/bootstrap-button.js":"996b53","bootstrap/tests/unit/bootstrap-carousel.js":"54a2cf","bootstrap/tests/unit/bootstrap-collapse.js":"1b1262","bootstrap/tests/unit/bootstrap-dropdown.js":"6a491c","bootstrap/tests/unit/bootstrap-modal.js":"6dd5a0","bootstrap/tests/unit/bootstrap-phantom.js":"940ffb","bootstrap/tests/unit/bootstrap-popover.js":"4f65eb","bootstrap/tests/unit/bootstrap-scrollspy.js":"bd7b2c","bootstrap/tests/unit/bootstrap-tab.js":"63f9fc","bootstrap/tests/unit/bootstrap-tooltip.js":"fc2c1c","bootstrap/tests/unit/bootstrap-transition.js":"a1b2cc","bootstrap/tests/unit/bootstrap-typeahead.js":"2f86e0","bootstrap/tests/vendor/jquery.js":"fcf997","bootstrap/tests/vendor/qunit.js":"a8c0db","pages/invest/chart/TSNB.chart.base.js":"33cd3a","pages/invest/chart/TSNB.chart.compare.js":"6b4c52","pages/invest/chart/TSNB.chart.event.js":"23af89","pages/invest/chart/TSNB.chart.kline.js":"3a1e79","pages/invest/chart/TSNB.chart.status.js":"62d5f1","pages/invest/chart/TSNB.chart.stock.js":"770897","pages/invest/chart/TSNB.chart.thumbnail.js":"52101d","pages/invest/hq/TSNB.compare_ah.js":"8dcaea","pages/invest/portfolio/TSNB.create-portfolio-group.js":"d9e67b","pages/invest/portfolio/TSNB.delete-portfolio-group.js":"af94fb","pages/invest/portfolio/TSNB.delete-portfolio.js":"1a6838","pages/invest/portfolio/TSNB.manage-portfolio-group.js":"1b0504","pages/invest/portfolio/TSNB.portfolio-util.js":"d78b8f","pages/invest/portfolio/TSNB.portfolio.js":"6580b6","pages/invest/portfolio/TSNB.stock-autocomplete.js":"cc5d2e","pages/sns/index/cube.js":"1f5d94","pages/sns/index/login.js":"981cc9","pages/sns/index/markets.js":"b51353","pages/sns/index/promotion.js":"aa01d3","pages/sns/index/stocks.js":"47fe9b"},
+  cssVersion: {"about.css":"8a68c7","activate_bar.css":"90db89","bootstrap-lite.css":"09c973","bootstrap.css":"84b5ee","bootstrap_full.css":"66069a","bootstrap_tab_xueqiu.css":"69dee9","bootstrap_tab_xueqiu_white.css":"5492e5","button.css":"23513c","chart.css":"d41d8c","comment.css":"dbfbd5","connect_link.css":"0edf0b","default.css":"165b51","default_mobile.css":"264592","dh.css":"a34780","dialog.css":"828547","editor.css":"57d8ef","editor_inline.css":"7d7563","flexpaper.css":"ecc108","form.css":"c845bd","fullcalendar.css":"b1f726","guide_overlay.css":"9dd1cf","hots-statuses.css":"181d4e","icon.css":"680a07","im.css":"aa2f71","im2014.css":"dbd489","imgroup.css":"5445f8","jinNang.css":"4bd30a","jinnang_1394597838763.css":"4bd30a","jquery.tagsinput.css":"3f47e0","jquery.ui.css":"279647","mentions_block.css":"4b58aa","mocha.css":"a5dea9","mystatus.css":"272433","newChart.css":"5d9be9","pdfviewer.css":"720dd9","performance-year-mobile.css":"a17f1a","performance-year.css":"317994","performanceChart.css":"2589d4","personality-ie8.css":"6a37b0","personality.css":"c723c4","pop_login.css":"8f20df","portfolioIframe.css":"c85adf","portfolioNew.css":"4f2887","profile.css":"0737fc","profile_info.css":"4b5978","profile_operations.css":"a0abbd","profile_status.css":"01d683","pull-to-refresh.css":"3e5b69","searchBar.css":"aeef28","simplePagination.css":"b23401","snowbrick.css":"ccc31a","status_mobile.css":"4c93b3","status_operate_btn.css":"0872af","tab-setting.css":"506d45","today_topic.css":"a8f864","tooltip.css":"820355","uploadify.css":"d5b49f","userRecommend.css":"beabbe","user_list.css":"bb06fd","widget.css":"88e99b","widget_user.css":"d1e0c0","common/base.css":"2262f2","common/grid.css":"ad0354","common/iconfont.css":"5cf08f","common/layout.css":"746a95","common/menu.css":"985468","common/mobile.css":"3362b1","common/mod.css":"e27423","common/modal.css":"f9111d","common/nav-bar.css":"c37184","common/pager.css":"0d5b09","common/reset.css":"e2dffc","common/var.css":"d41d8c","cube/cube_card.css":"ae3e1a","cube/cube_detail.css":"d97083","cube/cube_detail_m.css":"9ac92d","cube/cube_discover.css":"f4c154","cube/cube_discover_m.css":"4757c2","cube/cube_edit.css":"f5208f","lib/jquery.fullPage.css":"3dfa38","pages/TSNB.about.css":"28449a","pages/home.css":"3ef6f1","pages/imeigu.css":"d51b5b","pages/post.css":"16fd7a","pages/profile.css":"093e27","pages/status.css":"cc43c8","pages/tip.css":"9bc5a0","touch/common.css":"1c57df","touch/normal.css":"d536b7","widget/TSNB.comment.css":"705fe6","widget/TSNB.donate.css":"708f8a","widget/TSNB.donate_tooltip.css":"672acf","widget/TSNB.performance.css":"588cce","widget/TSNB.portfolio_dialog.css":"68b2cb","widget/TSNB.portfolio_user_dialog.css":"9ad4f2","widget/TSNB.report_spam.css":"3e795c","widget/TSNB.share.css":"f36d77","widget/TSNB.status.css":"024cfd","widget/TSNB.user_dialog.css":"81075a","widget/btn.css":"9fdda0","widget/datepicker.css":"d683e7","widget/donate.css":"ab255d","widget/donate_tooltip.css":"9e0336","widget/global_pin.css":"92b1cf","widget/modal.css":"5fc4e9","widget/profile_pin.css":"60296d","common/css3/inline-block.css":"bb8c38","pages/about/animation.css":"1e4355","pages/about/app.css":"d919d8","pages/about/app_mobile.css":"5b4c12","pages/about/share.css":"6712c8","pages/consultant/consultant.css":"138686","pages/event/TSNB.year-summary-mobile.css":"864fa2","pages/event/TSNB.year-summary.css":"a868f5","pages/event/cmc-mobile.css":"7fe9f7","pages/event/cmc.css":"8d1acc","pages/home/home-editor.css":"a4a479","pages/home/newuser-guide.css":"23dd61","pages/home/widgets.css":"cfae61","pages/index/cube.css":"cc49b2","pages/index/default.css":"417e7b","pages/invest/dealList.css":"79d551","pages/invest/mobile_chart.css":"31d833","pages/invest/mobile_performance.css":"c8e937","pages/invest/mobile_stock.css":"4a4c6d","pages/invest/profile_broker_rank.css":"55a18e","pages/invest/rank.css":"4d6196","pages/invest/stock_chart.css":"0eeda7","pages/mobile/common.css":"004801","pages/mobile/vars.css":"d41d8c","pages/pay/subscribe-mobile.css":"128827","pages/pay/wallet-mobile.css":"583bc0","pages/pay/wallet.css":"f7af19","pages/pin/pin-mobile.css":"bf2ba8","pages/sns/TSNB.single.css":"775597","pages/sns/home.css":"8f62db","pages/today/index-mobile.css":"a95cc9","widget/bootstrap/alerts.css":"2c520b","widget/bootstrap/badges.css":"da050d","widget/bootstrap/bootstrap.css":"971848","widget/bootstrap/breadcrumbs.css":"b9ab35","widget/bootstrap/button-groups.css":"a7c65b","widget/bootstrap/buttons.css":"a73cc0","widget/bootstrap/carousel.css":"93e128","widget/bootstrap/close.css":"30812b","widget/bootstrap/code.css":"fab06a","widget/bootstrap/component-animations.css":"63295e","widget/bootstrap/dropdowns.css":"d91661","widget/bootstrap/forms.css":"1dac09","widget/bootstrap/glyphicons.css":"024db0","widget/bootstrap/grid.css":"7f9bd0","widget/bootstrap/input-groups.css":"fc56c7","widget/bootstrap/jumbotron.css":"cf17ad","widget/bootstrap/labels.css":"3e0971","widget/bootstrap/list-group.css":"ec9751","widget/bootstrap/media.css":"ecbd91","widget/bootstrap/mixins.css":"a0cb66","widget/bootstrap/modals.css":"5b2682","widget/bootstrap/navbar.css":"abacbf","widget/bootstrap/navs.css":"9fbe5c","widget/bootstrap/normalize.css":"ddcb0b","widget/bootstrap/pager.css":"7be0a4","widget/bootstrap/pagination.css":"eaa566","widget/bootstrap/panels.css":"d53a2d","widget/bootstrap/popovers.css":"93bafa","widget/bootstrap/print.css":"b11602","widget/bootstrap/progress-bars.css":"580cf9","widget/bootstrap/responsive-embed.css":"1c5626","widget/bootstrap/responsive-utilities.css":"2db01f","widget/bootstrap/scaffolding.css":"0fc3a2","widget/bootstrap/tables.css":"462165","widget/bootstrap/theme.css":"52929d","widget/bootstrap/thumbnails.css":"b96eb4","widget/bootstrap/tooltip.css":"c060af","widget/bootstrap/type.css":"c8dff8","widget/bootstrap/utilities.css":"d3b1aa","widget/bootstrap/variables.css":"d41d8c","widget/bootstrap/wells.css":"578e1c","widget/mobile/modal.css":"f2f776","widget/mobile/normal.css":"d536b7","widget/mobile/top-bar.css":"f4eb52","widget/umeditor/editor.css":"5f1892","widget/umeditor/umeditor.css":"7eb569","widget/util/page.css":"3ea87c","pages/home/widgets/ad.css":"4f1e5e","pages/home/widgets/hot-stocks.css":"9c722b","pages/home/widgets/interesting-recommend.css":"25f080","pages/home/widgets/my-nav.css":"c4c64e","pages/home/widgets/other-services.css":"d76f0d","pages/home/widgets/sysnotify.css":"116c48","pages/invest/portfolio/group.css":"3e96d2","pages/invest/portfolio/portfolio.css":"f2f39b","widget/bootstrap/mixins/alerts.css":"d41d8c","widget/bootstrap/mixins/background-variant.css":"d41d8c","widget/bootstrap/mixins/border-radius.css":"d41d8c","widget/bootstrap/mixins/buttons.css":"d41d8c","widget/bootstrap/mixins/center-block.css":"d41d8c","widget/bootstrap/mixins/clearfix.css":"d41d8c","widget/bootstrap/mixins/forms.css":"d41d8c","widget/bootstrap/mixins/gradients.css":"d41d8c","widget/bootstrap/mixins/grid-framework.css":"d41d8c","widget/bootstrap/mixins/grid.css":"2f25b9","widget/bootstrap/mixins/hide-text.css":"d41d8c","widget/bootstrap/mixins/image.css":"d41d8c","widget/bootstrap/mixins/labels.css":"d41d8c","widget/bootstrap/mixins/list-group.css":"d41d8c","widget/bootstrap/mixins/nav-divider.css":"d41d8c","widget/bootstrap/mixins/nav-vertical-align.css":"d41d8c","widget/bootstrap/mixins/opacity.css":"d41d8c","widget/bootstrap/mixins/pagination.css":"d41d8c","widget/bootstrap/mixins/panels.css":"d41d8c","widget/bootstrap/mixins/progress-bar.css":"d41d8c","widget/bootstrap/mixins/reset-filter.css":"d41d8c","widget/bootstrap/mixins/resize.css":"d41d8c","widget/bootstrap/mixins/responsive-visibility.css":"d41d8c","widget/bootstrap/mixins/size.css":"d41d8c","widget/bootstrap/mixins/tab-focus.css":"d41d8c","widget/bootstrap/mixins/table-row.css":"d41d8c","widget/bootstrap/mixins/text-emphasis.css":"d41d8c","widget/bootstrap/mixins/text-overflow.css":"d41d8c","widget/bootstrap/mixins/vendor-prefixes.css":"d41d8c"},
+  staticDomain: 'http://assets.imedao.com',
+  bid : ''
+});
+
+SNB.data.access_token =  $.cookie("xq_a_token") || "8c8b73722c1169dd1a40936d452a62dbb677023f";
+</script><!-- 防止局域网缓存用户信息--><script>(function(){
+  var search = window.location.search || '';
+  if (search.indexOf('_=') === -1 && SNB.bid !== '' && document.cookie && document.cookie.indexOf('bid=' + SNB.bid) === -1) {
+    var searchArr = search.split('&');
+    searchArr.push('_=' + (+new Date).toString(36));
+    window.location.search = search.join('&');
+  }
+})();
+</script><script src="http://assets.imedao.com/js/05.jquery.cookie.js"></script><script>function delCookie(name){//为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间
+  var date = new Date();
+  date.setTime(date.getTime() - 10000);
+  document.cookie = name + '=a; expires=' + date.toGMTString();
+}
+/*
+if(!$.cookie('xq_refresh') && $.cookie('xq_a_token')){
+  $.ajax({
+    url: '/user/refreshCookie',
+    async: false
+  }).done(function(){
+    delCookie('xq_a_token');
+    delCookie('xq_r_token');
+    delCookie('xq_token_expire');
+  });
+}
+*/
+jQuery(function($){
+  $('.navbar a.exit').on('click', function(){
+    try{
+      delCookie('xq_a_token');
+      delCookie('xq_r_token');
+      delCookie('xq_token_expire');
+    } catch(e){
+      console.log(e);
+    }
+  });
+});</script><script src="http://assets.imedao.com/js/SNB.helpers-d5327e.js"></script><script>SNB.profileUser = SNB.currentUser</script><noscript><style>html {
+  display: block
+}</style><p class="ie6">当前浏览器禁用了JavaScript，导致不能正常使用雪球的功能，请打开JavaScript后再访问本站。</p></noscript><!--[if lt IE 8]><div class="ie6">你正在使用的浏览器版本过低（IE7或IE7以下，包括套用了IE内核的360浏览器、搜狗浏览器等）。<br />如果不能正常浏览本站或某些功能无法使用，请到微软官网下载升级 <a href="http://windows.microsoft.com/zh-CN/internet-explorer/downloads/ie">Internet Explorer</a> 或使用 <a href="http://www.google.com/chrome/">谷歌 Google Chrome</a> 浏览器。</div><![endif]--><div class="temp"></div><!--!=css('im.css')--><script>seajs.config({
+  timeout: 60000,
+  preload: [SNB.jsVersion && _.keys(SNB.jsVersion).length ? 'SNB.base-' + SNB.jsVersion['SNB.base.js'] + '.js' : 'SNB.base.js']
+})
+</script><script>seajs.use("SNB.guest.js")
+</script><script>;(function () {
+  var keys = _.keys(SNB.jsVersion)
+    , map = [];
+    
+  if (keys.length) {
+    _.each(keys, function(k) {
+      var reg = new RegExp('\\/(' + k.replace(/\./g, '\\.') + ')(\\?.*|$)');
+      
+      map.push([reg, function (all, fileName, param) {
+        var result = '/' + fileName.replace(/\.js$/i, '') + '-' + SNB.jsVersion[k] + '.js';
+        
+        if (param) {
+          result += param;
+        }
+        
+        return result;
+      }]);
+    });
+    
+    seajs.config({
+      map: map
+    });
+  }
+}())
+</script><!-- test config--><div id="center" class="container"><style>body {
+  padding-top:0;
+}
+.container{
+  width:auto
+}
+.fwrapper .fupper,
+.fwrapper .ffooter{
+  width: 960px;
+  margin: 0 auto;
+  display: table;
+  content: "";
+}
+#flogo {
+  height:42px;
+  display:block;
+  background: url(http://assets.imedao.com/images/login_logo.png) no-repeat;
+  text-indent: -9999px;
+  margin-top: 30px;
+  width: 290px;
+}
+@media all and (-webkit-min-device-pixel-ratio: 2) {
+  #flogo {
+    background: url(http://assets.imedao.com/images/login_logo@2x.png) no-repeat;
+    background-size: 285px 42px;
+  }
+}
+@media (max-width: 767px) {
+  .promo{
+    display:none
+  }
+  .fwrapper .fupper,.fwrapper .ffooter{
+    width:100%
+  }
+  .fwrapper .fupper{
+    padding-top: 40px;
+  }
+  .ffooter .active_user,a.today_topic_more,.ffooter .copyright{
+    display:none
+  }
+  .fupper .login{
+    float:none
+  }
+  .ffooter .today_topic{
+    width: 90%;
+    padding: 0 5%;
+  }
+  .ffooter{
+    clear:both
+  }
+  .fcopyright{
+    text-align: center;
+  }
+  .login-box{
+    margin: 0 auto;
+  }
+  .register{
+    width: 280px;
+    margin: 0 auto;
+  }
+  #flogo{
+    margin: 0 auto;
+  }
+  #warnning{
+    bottom: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .fupper .un-login{
+    display:none
+  }
+}
+.login {
+  float:right;
+  padding-top:50px;
+}
+.ffooter > ul > li {
+  float: left;
+  width: 100px;
+  font-size: 12px;
+}
+.ffooter > ul > li a{
+  color:#c0c0c0;
+  line-height: 1.6;
+}
+.ffooter > ul > li > h3 >a {
+  padding-bottom: 6px;
+}
+.ffooter > ul > li > h3 >a {
+  color:#666;
+}
+.ffooter_wrapper{
+  background-color: #f8f8f8;
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  border-top: 2px solid #f3f3f3;
+}
+.ffooter_wrapper .copyright{
+  line-height: 26px;
+  margin-top: 60px;
+}
+.ffooter_wrapper .copyright a,
+.ffooter_wrapper .copyright span{
+  color: #676767;
+  padding: 0 6px;
+}
+.promo{
+  margin-top:50px;
+}
+.ffooter_wrapper .copyright .mobile-clients{
+  padding-left:0;
+}
+</style><div class="fwrapper"><div class="fupper"><div id="head"><h1><a id="flogo" href="/" title="雪球">雪球</a></h1></div><div class="login"><style>.register{
+  text-align: right;
+  float:right;
+}
+#password,
+#email,
+#account{
+  background: none repeat scroll 0 0 white;
+  border: 1px solid #888;
+  height: 24px;
+  outline: medium none;
+  width: 271px;
+  border-radius:3px;
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 4px;
+  padding-left: 6px;
+  padding-bottom: 4px;
+  -moz-box-shadow: 0 0 0 #000,inset 0px 3px 3px #eee;
+  -webkit-box-shadow: 0 0 0 black,inset 0px 3px 3px #EEE;
+  box-shadow: 0 0 0 black,inset 0px 3px 3px #EEE;
+  box-sizing: content-box;
+}
+.email{
+  margin:18px 0 20px 0;
+}
+.regread{
+  font-size:12px;
+  color:#c0c0c0;
+  padding-top: 28px;
+}
+.login-button{
+  padding-top: 18px;
+  height:29px;
+  line-height:29px;
+}
+.login-checkbox {
+  vertical-align:middle;
+}
+.login-box {
+  position:relative;
+  width:280px;
+  background-color:#fff;
+}
+.password-wrap,.email-wrap {
+  position:relative;
+}
+.email-wrap .watermark{
+  width:280px;
+}
+.password-label,.email-label {
+  left:24px;
+  top:11px;
+  display:block;
+  position:absolute;
+  color:#c0c0c0;
+  font-size:14px
+}
+.connect-link-wrap {
+  margin-top:20px;
+}
+.forgetpass {
+  margin-left:10px;
+}
+.warning{
+  z-index:1050;
+  left:0;
+  position:absolute;
+  bottom:172px;
+  width:196px;
+  font-size:12px;
+  border-radius: 3px 3px 3px 3px;
+  border-top:1px solid #F9D99E;
+  border-bottom:0 none;
+  display:none;
+  background:#ffffe8  url("https://js.xueqiu.com/images/warn-arrow.jpg") no-repeat left bottom;
+  padding-bottom:6px;
+}
+.warn-hd{
+  color:#CC0000;
+  font-weight:bold;
+  padding: 4px 0 3px 9px;
+  border-left:1px solid #F9D99E;
+  border-right:1px solid #F9D99E;
+}
+.warn-hd span{
+  padding-left:6px;
+}
+.warn-wrap{
+  margin-top:8px;
+  margin-left:9px;
+}
+.warn-one{
+  margin-bottom:8px;
+}
+.warn-bd{
+  padding:8px;
+  line-height:18px;
+  border-left:1px solid #F9D99E;
+  border-right:1px solid #F9D99E;
+  margin-bottom:-1px;
+}
+.warn-two{
+  color:red;
+}
+#unActivated{
+  background:#ffffe8 url("https://js.xueqiu.com/images/warn-arrow-large.png") no-repeat left bottom;
+}
+.region-switcher{
+  float:right;
+  margin-top:2px;
+  color:#999;
+}
+.region-code{
+  display:none;
+}
+.abroad .region-code{
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+  margin-right:10px;
+  width:55px;
+}
+.abroad .email-wrap{
+  display:inline-block;
+  *display:inline;
+  zoom:1;
+}
+.abroad #account{
+  width:202px;
+}
+.forgetpass a{
+  color:#999;
+}
+</style><div class="login-box"><div id="warning" style="display:block;" class="warning"><div class="warn-hd"><img src="http://assets.imedao.com/images/warn.png"/><span>账号密码错误</span></div><div class="warn-bd">请重新输入密码，或通过找回密码重设账号密码</div></div><div id="warning" style="display:none" class="warning"><div class="warn-hd"><img src="http://assets.imedao.com/images/warn.png"/><span></span></div><div class="warn-bd"></div></div><div id="unActivated" style="display:none;width:234px;height: 56px;" class="warning"><div class="warn-hd"><img src="http://assets.imedao.com/images/atention.png"/><span>该账号尚未激活</span></div><div class="warn-bd">请先登录邮箱激活帐号<a href="javascript:;" class="activate_send_email">重新发送激活邮件</a></div></div><div id="form-section"><form action="/service/login" id="loginForm" method="post" class="formbox"><div class="email"><select class="region-code"></select><div class="email-wrap"><input id="account" name="account" tabindex="1" class="input_with_watermark"/></div></div><div class="password"><div class="password-wrap"><input id="password" name="password" tabindex="2" type="password" autocomplete="off" class="input_with_watermark"/></div></div><div class="regread"><a href="#" data-text="邮箱登录" class="region-switcher">海外手机号登录</a><input id="login_days" tabindex="3" type="checkbox" name="remember_me" value="1" checked="checked" class="login-checkbox"/><label for="login_days">记住我</label><span class="forgetpass"><a href="/account/lostpasswd">忘记密码?</a></span></div><div class="login-button"><a href="/account/reg" class="register">注册雪球帐号</a><input id="loginButton" type="submit" tabindex="4" value="登 录" class="button_blue regbtn"/></div></form></div><style>.un-login{
+  clear:both;
+  padding-top:30px;
+  color:#c0c0c0;
+  font-size:12px;
+  width:280px;
+}
+
+ul.fconnect-link li{
+  float:left;
+  width:132px;
+  height:32px;
+  text-align:center;
+  border-radius:2px;
+}
+
+ul.fconnect-link li a{
+  line-height:34px;
+  color:#fff;
+  width:134px;
+  height:34px;
+  display:block;
+}
+
+ul.fconnect-link li a i{
+  display:inline-block;
+  width:20px;
+  height:18px;
+  margin-right:6px;
+  background:url('https://js.xueqiu.com/images/login_logo_sinaQQ.png') no-repeat;
+  vertical-align:bottom;
+  padding-top:8px;
+}
+
+ul.fconnect-link li.qq a i{
+  background-position:-23px 0;
+}
+
+ul.fconnect-link li.qq{
+  background-color:#7fbfc7;
+  border:1px solid #6bb2bb;
+}
+
+ul.fconnect-link li.qq:hover{
+  background-color:#8ac4cc;
+}
+
+ul.fconnect-link li.sina{
+  background-color:#cf6672;
+  margin-right:12px;
+  border:1px solid #bc505c;
+}
+
+ul.fconnect-link li.sina:hover{
+  background-color:#d6717c;
+}</style><div class="un-login"><div class="connect-link-wrap"><div class="connectlink"><ul class="fconnect-link"><li class="sina"><a id="sina_login" href="javascript:;"><i></i>新浪微博登录</a></li><li class="qq"><a id="qq_login" href="javascript:;"><i></i>QQ&nbsp;帐号登录</a></li><div class="fixit"></div></ul></div></div></div><script>seajs.use('SNB.third_oauth.js',function(){
+  $(".un-login").on("click",".connectlink a",function(e){
+    if(e.target.id === "qq_login"){
+      SNB.third_oauth.oauthLogin_qq({directLogin:true});
+    }else if(e.target.id === "sina_login"){
+      SNB.third_oauth.oauthLogin("sina");
+    }
+  });
+})</script></div><script src="http://assets.imedao.com/js/jquery.watermark-0cc691.js"></script><script>seajs.use(['login.js'])</script></div><a href="/about/mobile-xueqiu" target="_target"><img width="496" height="375" src="http://assets.imedao.com/images/img@.png" alt="xueqiu apps" class="promo"/></a></div><div class="ffooter_wrapper"><div class="ffooter"><div style="overflow:hidden;zoom:1;"></div><div class="copyright"><a href="/about/mobile-xueqiu" target="_blank" class="mobile-clients">雪球客户端</a><a href="/about" target="_blank">关于雪球</a><a href="about/faq" target="_blank">常见问题</a><span>© 2015 XUEQIU.COM</span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP证100666号</a><span>京公海网安备 110108006038</span></div></div></div></div><script src="http://assets.imedao.com/js/jquery.galleriffic-e6186f.js"></script><script>$(document).ready(function () {
+  $(".active_user").show()
+});
+</script><script>$(document).ready(function () {
+
+  $('body').addClass('noPreload');
+  
+  var gallery = $('#thumbs').galleriffic({
+    delay:                     3000,
+    numThumbs:                 12,
+    preloadAhead:              3,
+    imageContainerSel:         '#slideshow',
+    captionContainerSel:       '#caption',
+    renderSSControls:          true,
+    renderNavControls:         true,
+    enableHistory:             false,
+    enableBottomPager:         false,
+    autoStart:                 true,
+    syncTransitions:           true,
+    enableKeyboardNavigation: false,
+    defaultTransitionDuration: 500,
+    onSlideChange:             function(prevIndex, nextIndex) {
+      // 'this' refers to the gallery, which is an extension of $('#thumbs')
+      this.find('ul.thumbs').children()
+        .eq(prevIndex).fadeTo('fast', 1.0).end()
+        .eq(nextIndex).fadeTo('fast', 1.0);
+    }
+  });
+  
+});</script></div><script>var _hmt = _hmt || [];
+(function () {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1db88642e346389874251b5a1eded6e3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><!--end baidu tongji--><!--google analytics--><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-16079156-4']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+window.onerror = function (message, file, line) {
+  var sFormattedMessage = '[' + file + ' (' + line + ')]' + message;
+  _gaq.push(['_trackEvent', 'Exceptions', 'Application', sFormattedMessage, null, true]);
+}</script><!--end google analytics--><script>jQuery(function ($) {
+  $('.cube-invite').on('click', function () {
+    var href = $.trim($(this).attr('href'));
+    if (window._hmt) {
+      _hmt.push(['_trackEvent', 'cube-invite', 'click', href]);
+    }
+  });
+});</script></body></html>
+{"error_description":"遇到错误，请刷新页面或者重新登录帐号后再试","error_uri":"/cubes/rebalancing/history.json","error_code":"400016"}

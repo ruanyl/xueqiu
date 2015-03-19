@@ -1,0 +1,29 @@
+{
+  "name": "xueqiu",
+  "version": "0.1.0",
+  "description": "xueqiu analyze",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ruanyl/xueqiu.git"
+  },
+  "keywords": [
+    "xueqiu",
+    "stock"
+  ],
+  "author": "Yulong Ruan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ruanyl/xueqiu/issues"
+  },
+  "homepage": "https://github.com/ruanyl/xueqiu",
+  "dependencies": {
+    "casperjs": "^1.1.0-beta3",
+    "cheerio": "^0.18.0",
+    "request": "^2.53.0",
+    "tough-cookie": "^0.12.1"
+  }
+}
