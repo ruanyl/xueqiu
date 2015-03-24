@@ -1,6 +1,6 @@
-var cookie = require('./lib/cookie');
-var fetch = require('./lib/fetch');
-var data = require('./data/stock.json');
+var cookie = require('../lib/cookie');
+var fetch = require('../lib/fetch');
+var data = require('../data/stock.json');
 var async = require('async');
 
 var q = async.queue(function(task, next) {
