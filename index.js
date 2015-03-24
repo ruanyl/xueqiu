@@ -1,13 +1,18 @@
 var cookie = require('./lib/cookie');
 var fetch = require('./lib/fetch');
 var data = require('./data/stock.json');
+var async = require('async');
+
+var q = async.queue(function(task, next) {
+  fetch.rebalancing(task, function(data) {
+    console.log(data);
+    next();
+  })
+}, 10);
 
 /*cookie.getCookieStr('http://xueqiu.com', function(cookie) {
   for(var key in data.combine) {
-    fetch.rebalancing({symbol: key, cookie: cookie}, function(combine) {
-      console.log(combine);
-      console.log('=================================================');
-    });
+    q.push({symbol: key, cookie: cookie});
   }
 });*/
 
@@ -17,3 +22,7 @@ cookie.getCookieStr('http://xueqiu.com', function(cookie) {
     console.log('=================================================');
   });
 });
+
+q.drain = function() {
+  console.log('done');
+};
