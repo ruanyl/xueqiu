@@ -10,11 +10,10 @@ var db = new DB(Schema.CombinationSchema, 'combination');
 var q = async.queue(function(task, next) {
   fetch.rebalancing(task, function(data) {
     data.symbol = task.symbol;
-    console.log(data);
     db.save(data);
     next();
   })
-}, 11);
+}, 5);
 
 cookie.getCookieStr('http://xueqiu.com', function(cookie) {
   for (var symbol in data.combine) {
@@ -27,5 +26,5 @@ cookie.getCookieStr('http://xueqiu.com', function(cookie) {
 
 q.drain = function() {
   console.log('done');
-  db.close();
+  //db.close();
 };
